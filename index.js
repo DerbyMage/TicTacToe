@@ -18,9 +18,12 @@ function playGame() {
     rowOne.forEach(ele => {ele.addEventListener('click', function(e) {
         console.log(e.target)
         
-        ele.innerText = playerOne.turn === true ? playerOne.letter: playerTwo.letter
+       if(ele.innerText === '' ) { ele.innerText = playerOne.turn === true ? playerOne.letter: playerTwo.letter
         playerOne.turn = !playerOne.turn
-        playerTwo.turn = !playerTwo.turn
+        playerTwo.turn = !playerTwo.turn} 
+        else { alert('Space has already been taken') }
+
+       
     })})
 
 }
