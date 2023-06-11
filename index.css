@@ -49,11 +49,12 @@ button:hover {
 
 }
 
-.row1 > div {
+.row > div {
     display: flex;
     align-items: center;
     justify-content: center;
     border: 5px solid black;
+    height: 105px;
     width: 10rem;
     border-top: none;
     font-size: 45px;;

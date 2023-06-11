@@ -7,17 +7,24 @@ const playerFactory = (name, letter) => {
 
 function playGame() {
     const newName = prompt('What is your name?')
-    const boardArr = []
-    const rowOne = document.querySelectorAll('div.row1>.square')
-    newName
+    const rowOne = document.querySelectorAll('.square')
     const playerOne = playerFactory(newName, 'X')
     playerOne.turn = true
     console.log(playerOne)
     const playerTwo =playerFactory('computer', 'O')
     playerTwo.turn = false
     console.log(playerTwo)
-    rowOne.addEventListener('click', function(e) {
+    console.log(rowOne)
+    rowOne.forEach(ele => {ele.addEventListener('click', function(e) {
         console.log(e.target)
-    })
+        
+        ele.innerText = playerOne.turn === true ? playerOne.letter: playerTwo.letter
+        playerOne.turn = !playerOne.turn
+        playerTwo.turn = !playerTwo.turn
+    })})
 
+}
+
+const gameBoard = {
+ boardArr: [{position: 1}, {position: 2}, {position: 3}, {position: 4}, {position: 5}, {position: 6}, {position: 7}, {position: 8}, {position: 9}]
 }
