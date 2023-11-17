@@ -5,6 +5,9 @@ body {
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+    background: gray;
+    overflow: hidden;
+    
 }
 
 .play {
@@ -22,17 +25,21 @@ button:hover {
     background-color: aquamarine;
     transform: scale(1.08);
     cursor: pointer;
+    font-weight: bolder;
+    color: purple
 }
 
 .board {
-    width: 400px;
-    height: 400px;
     display: grid;
     /* grid-template: 1 / 1 / 4 / 4; */
     /* border: 1px solid black;; */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr)
     
+}
+
+.row:hover {
+    cursor:pointer;
 }
 
 .row:first-child {
@@ -72,3 +79,15 @@ button:hover {
     border-right: none;
     
 } 
+
+.congrats {
+    font-size: 24px;
+    font-weight: bolder;
+    color:purple;
+}
+
+.newColor {
+    color: green;
+    border: 12px;
+    font-size: 25px;
+}
