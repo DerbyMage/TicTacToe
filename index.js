@@ -1,7 +1,8 @@
 //TicTacToe board and game
 const playerFactory = (name, letter) => {
-    let turn; 
-    return { name, letter, turn}
+    let turn;
+    let wins = 0; 
+    return { name, letter, turn, wins}
 
 }
 

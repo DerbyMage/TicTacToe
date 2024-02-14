@@ -10,12 +10,13 @@ body {
     
 }
 
-.play {
-    margin-bottom: 200px;;;
-}
+/* .play {
+    margin-bottom: 75px;;;
+} */
 
 button {
-    border-radius: 6px;;
+    margin-bottom: 75px;;;
+    border-radius: 6%;;
     width: 200px;
     background-color: rgb(69, 189, 149);
     height: 45px;
@@ -34,7 +35,8 @@ button:hover {
     /* grid-template: 1 / 1 / 4 / 4; */
     /* border: 1px solid black;; */
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr)
+    grid-template-rows: repeat(3, 1fr);
+    height: 300px;
     
 }
 
@@ -81,13 +83,33 @@ button:hover {
 } 
 
 .congrats {
-    font-size: 24px;
+    font-size: 34px;
+    margin-bottom:22px;
     font-weight: bolder;
-    color:purple;
+    color:maroon;
 }
 
-.newColor {
-    color: green;
-    border: 12px;
-    font-size: 25px;
+.score {
+    margin-top: 50px;
+    /* padding: 25px;; */
+    border: 2px solid black;
+    color: black;
+    font-size: 32px;;
+    background-color: rgb(69, 189, 149);
+    border-radius: 6%;
+
+}
+
+.scoreboard {
+    /* border-bottom: 1px solid black;; */
+    padding: 0 30px;
+    background-color: rgb(69, 189, 149);
+    border-radius: 12%;
+
+}
+
+.rematch {
+    font-size:22px;
+    font-weight: bold;
+    color:gold;
 }
